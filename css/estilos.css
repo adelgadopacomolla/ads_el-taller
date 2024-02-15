@@ -1,0 +1,457 @@
+body {
+    font-family: 'Work Sans', serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-body {
+    background-image: url(../img/home-hero.jpg);
+    background-size: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.index-navbar ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-navbar li {
+    list-style: none;
+    display: inline;
+    padding: 2em;
+}
+
+.index-navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.index-navbar a:hover {
+    color: #6BDEC8;
+}
+
+.index-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.index-main h1 {
+    font-size: 10em;
+    margin: 0;
+    letter-spacing: -0.07em;
+}
+
+.index-main h2 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 0.2em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding-bottom: 2em;
+}
+
+header div.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.6em;
+    margin-bottom: 0.7em;
+}
+
+header div.logo img {
+    height: 2.5em;
+    padding-right: 1em;
+}
+
+header div.logo h1 {
+    color: #FFFFFF;
+    letter-spacing: -0.07em;
+    font-size: 3em;
+    margin: 0;
+}
+
+header nav ul {
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-bottom: 0.6em;
+}
+
+header div.logo h1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header nav ul li a:hover, header div.logo h1 a:hover {
+    color: #6BDEC8;
+}
+
+header nav ul li.active a {
+    box-sizing: border-box;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+main.content {
+    margin: 1em 20%;
+}
+
+main.content article h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main.content > .media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 15%;
+}
+
+main.content > .media > img {
+    width: 100%;
+}
+
+main.content > .media > .media-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+main.content > .media > .media-video > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+main.content > .media > figcaption {
+    font-size: 0.7em;
+    padding-top: 1.3em;
+    align-self: flex-start;
+}
+
+main.content article h2 {
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+main.content article ul li {
+    list-style: square;
+    margin-bottom: 0.5em;
+}
+
+main.content article dl {
+    margin-left: 3em;
+}
+
+main.content article dl dt {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+main.content article dl dd {
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+}
+
+main.content p.credits {
+    font-size: 0.8em;
+    margin-bottom: 3em;
+}
+
+main.content a {
+    color: #942C0B;
+    text-decoration: none;
+    border-width: 1px;
+    border-bottom-style: dotted;
+}
+
+main.content a:hover {
+    border-bottom-style: solid;
+}
+
+main.content > h1, main.content > h2 {
+    text-align: center;
+    margin: 0;
+}
+
+main.content > h1 {
+    font-size: 2.6em;
+}
+
+main.content > h2 {
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+main.content > h2.courses {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+main.content table tbody tr:nth-child(odd) {
+    background-color: #6BDEC8;
+}
+
+main.content table {
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-collapse: collapse;
+}
+
+main.content table > caption {
+    font-size: 1.3em;
+    border-top: solid;
+    border-width: 1px;
+    padding: 0.1em;
+}
+
+main.content table > thead tr {
+    border-bottom-style: solid;
+    border-width: 1px;
+    height: 2.5em;
+}
+
+main.content table > thead tr > th {
+    font-weight: 400;
+    text-align: left;
+}
+
+main.content table > tbody tr {
+    height: 3em;
+}
+
+main.content table > tbody tr > th {
+    height: 2em;
+    text-align: left;
+    font-size: 1.4em;
+}
+
+main.content table > tfoot tr {
+    height: 2.5em;
+}
+
+main.content section.form-section h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+main.content section.form-section {
+    margin-bottom: 2em;
+}
+
+main.content section.form-section span {
+    font-size: 0.9em;
+}
+
+.inputs {
+    margin: 2em 0.9em;
+}
+
+.text-input, .select-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input > input, .select-input > select {
+    height: 3em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    margin-left: 0.6em;
+    padding-left: 0.3em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    font-size: 1em;
+}
+
+.text-input > label, .select-input > label {
+    margin-left: 0.6em;
+    padding-left: 0;
+}
+
+.radio-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column div.radio-input {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.textarea {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.textarea label {
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+.textarea textarea {
+    height: 15em;
+}
+
+main.content section.form-section form input[type=submit] {
+    margin-top: 1em;
+    border-radius: 0;
+    border-style: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0.9em;
+    background-color: #942C0B;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-wrap div {
+    flex: 1 0 50%;
+}
+
+main.content section.form-section form fieldset {
+    margin-top: 1.5em;
+}
+
+main.content section.form-section form fieldset legend {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-left: 0.8em;
+}
+
+main.content section.form-section form fieldset legend {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-left: 0.8em;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+footer.transparent-footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer.transparent-footer ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer.transparent-footer li {
+    list-style: none;
+    display: inline;
+    padding: 1.2em;
+}
+
+footer.transparent-footer a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #FFFFFF;
+}
+
+footer.transparent-footer a:hover {
+    color: #6BDEC8;
+}
+
+footer.transparent-footer p {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+}
+
+footer.footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer.footer ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20%;
+}
+
+footer.footer p {
+    margin-left: 20%;
+    padding-bottom: 2.5em;
+    font-size: 0.8em;
+}
+
+footer.footer li {
+    list-style: none;
+    display: inline;
+    padding-right: 1.2em;
+}
+
+footer.footer li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+footer.footer li a:hover {
+    text-decoration: none;
+    font-size: 1em;
+    color: #6BDEC8;
+}

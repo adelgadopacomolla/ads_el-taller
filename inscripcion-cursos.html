@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <title>El taller - Cursoss</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/isologo-taller.png" alt="Isologo el taller" draggable="false">
+        <h1><a href="index.html">el taller</a></h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="que-es-la-ceramica.html">Cerámica</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li class="active"><a href="inscripcion-cursos.html">Inscripción</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
+    <section class="form-section">
+        <h1>Inscripción a los cursos</h1>
+
+        <form action="/" method="POST">
+            <span>Los campos señalados con * son obligatorios</span>
+            <fieldset>
+                <legend>Detalles de la inscripción</legend>
+
+                <section class="inputs form-wrap">
+                    <div class="text-input">
+                        <label for="name">Nombre *</label>
+                        <input type="text" name="name" id="name" pattern="[A-Za-z-']{2,64}" required>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="lastname">Apellidos *</label>
+                        <input type="text" name="lastname" id="lastname" pattern="[A-Za-z-' ]{2,128}" required>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="phone">Teléfono *</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{9}" required>
+                    </div>
+
+                    <div class="text-input">
+                        <label for="birthdate">Fecha de nacimiento *</label>
+                        <input type="date" name="birthdate" id="birthdate" required>
+                    </div>
+
+                    <div class="select-input">
+                        <label for="course">Curso *</label>
+                        <select name="course" id="course" required>
+                            <option value="" disabled selected>Selecciona el curso</option>
+                            <option value="lathe">Torno</option>
+                            <option value="ceramics">Cerámica</option>
+                            <option value="modeling">Modelado</option>
+                            <option value="glazes">Esmaltes</option>
+                            <option value="ceramic-jewelry">Joyería cerámica</option>
+                        </select>
+                    </div>
+                </section>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Otras informaciones</legend>
+                <fieldset class="form-column">
+                    <legend>¿Has hecho otros cursos con nosotros? *</legend>
+                    <div class="radio-input">
+                        <input type="radio" id="repeat-course-yes" name="repeat-course" value="yes" required>
+                        <label for="repeat-course-yes">Sí</label>
+                    </div>
+
+                    <div class="radio-input">
+                        <input type="radio" id="repeat-course-no" name="repeat-course" value="no" required>
+                        <label for="repeat-course-no">No</label>
+                    </div>
+
+                </fieldset>
+
+                <section class="textarea">
+                    <div class="text-input">
+                        <label for="comments">¿Quieres comentar o preguntar algo?</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                </section>
+
+
+            </fieldset>
+
+            <fieldset class="form-column">
+                <legend>Elige un método de pago *</legend>
+
+                <div class="radio-input">
+                    <input type="radio" id="payment-transfer" name="payment" value="transfer" required>
+                    <label for="payment-transfer">Transferencia</label>
+                </div>
+
+                <div class="radio-input">
+                    <input type="radio" id="payment-credit" name="payment" value="credit" required>
+                    <label for="payment-credit">Tarjeta de débito / crédito</label>
+                </div>
+
+                <div class="radio-input">
+                    <input type="radio" id="payment-cash" name="payment" value="cash" required>
+                    <label for="payment-cash">En efectivo</label>
+                </div>
+            </fieldset>
+
+            <p>
+                INFORMACIÓN SOBRE PROTECCIÓN DE DATOS <b>DE EL TALLER</b>. <b>Finalidades</b>: recogida de datos para la
+                inscripción como socio del interesado. <b>Legitimación</b>: Consentimiento del interesado. <b>Destinatarios</b>: No están previstas
+                cesiones de datos a terceros, excepto obligación legal. <b>Derechos</b>: Puede retirar su consentimiento en cualquier
+                momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="mailto:info@eltaller.es">info@eltaller.es</a>. <b>Información
+                Adicional</b>: Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>.
+            </p>
+
+            <div class="radio-input">
+                <input type="checkbox" id="accept-privacy-policy" name="accept-privacy-policy" value="yes" required>
+                <label for="accept-privacy-policy">He leído y acepto la política de privacidad *</label>
+            </div>
+
+            <input type="submit" value="Inscríbeme">
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <ul>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de cookies</a></li>
+    </ul>
+    <p>2023 © Aitor Delgado Santana</p>
+</footer>
+
+</body>
+</html>
